@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{581633EB-B896-402F-8E60-36F3DA191C85}") = "jablsHTMLValidation", "jablsHTMLValidation\jablsHTMLValidation.lsxtproj", "{6361AC0F-407F-47EE-8734-96EA42517FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jablsHTMLValidation.Server", "jablsHTMLValidation\jablsHTMLValidation.Server\jablsHTMLValidation.Server.csproj", "{51719AE5-32D0-4D2B-A1BA-2014EBD07E5D}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "jablsHTMLValidation.HTMLClient", "jablsHTMLValidation\jablsHTMLValidation.HTMLClient\jablsHTMLValidation.HTMLClient.jsproj", "{121ABDEE-FB43-456B-AF6F-E9250372AA51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6361AC0F-407F-47EE-8734-96EA42517FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6361AC0F-407F-47EE-8734-96EA42517FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6361AC0F-407F-47EE-8734-96EA42517FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6361AC0F-407F-47EE-8734-96EA42517FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51719AE5-32D0-4D2B-A1BA-2014EBD07E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51719AE5-32D0-4D2B-A1BA-2014EBD07E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51719AE5-32D0-4D2B-A1BA-2014EBD07E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51719AE5-32D0-4D2B-A1BA-2014EBD07E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{121ABDEE-FB43-456B-AF6F-E9250372AA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{121ABDEE-FB43-456B-AF6F-E9250372AA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{121ABDEE-FB43-456B-AF6F-E9250372AA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{121ABDEE-FB43-456B-AF6F-E9250372AA51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

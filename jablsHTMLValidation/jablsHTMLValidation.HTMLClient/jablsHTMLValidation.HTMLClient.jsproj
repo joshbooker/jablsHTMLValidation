@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|AnyCPU">
@@ -69,6 +69,9 @@
     <Content Include="Content\Images\user-splash-screen.png" />
     <Content Include="Content\Web.config" />
     <Content Include="packages.config" />
+    <Content Include="Screens\Accounts\ViewAccount.lsml.js">
+      <DependentUpon>ViewAccount.lsml</DependentUpon>
+    </Content>
     <Content Include="Scripts\datajs-1.1.3.js" />
     <Content Include="Scripts\datajs-1.1.3.min.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
@@ -85,47 +88,46 @@
     <Content Include="Scripts\winjs-1.0.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Screens\" />
-  </ItemGroup>
-  <ItemGroup>
     <ServiceMetadataReference Include="..\jablsHTMLValidation.Server\jablsHTMLValidation.Server.csproj">
       <Visible>false</Visible>
     </ServiceMetadataReference>
   </ItemGroup>
   <ItemGroup>
+    <LightSwitchModel Include="Properties\ApplicationData\Accounts.lsml" />
     <LightSwitchModel Include="Properties\Client.lsml">
       <ProjectCritical>true</ProjectCritical>
     </LightSwitchModel>
     <LightSwitchModel Include="Properties\Proxies.lsml" />
+    <LightSwitchModel Include="Screens\Accounts\AddEditAccount.lsml" />
+    <LightSwitchModel Include="Screens\Accounts\BrowseAccounts.lsml" />
+    <LightSwitchModel Include="Screens\Accounts\ViewAccount.lsml" />
   </ItemGroup>
-  <ItemGroup>  
+  <ItemGroup>
     <_ClientBuildFile Include="GeneratedArtifacts\model.json">
-        <SubFolder>Content\Resources\Generated</SubFolder>
+      <SubFolder>Content\Resources\Generated</SubFolder>
     </_ClientBuildFile>
     <_ClientBuildFile Include="GeneratedArtifacts\data.js">
-        <SubFolder>Scripts\Generated</SubFolder>
+      <SubFolder>Scripts\Generated</SubFolder>
     </_ClientBuildFile>
     <_ClientBuildFile Include="GeneratedArtifacts\viewModel.js">
-        <SubFolder>Scripts\Generated</SubFolder>
+      <SubFolder>Scripts\Generated</SubFolder>
     </_ClientBuildFile>
     <_ClientBuildFile Include="GeneratedArtifacts\usercode.js">
-        <SubFolder>Scripts\Generated</SubFolder>
+      <SubFolder>Scripts\Generated</SubFolder>
     </_ClientBuildFile>
     <_ClientBuildFile Include="GeneratedArtifacts\resources.js">
       <SubFolder>Scripts\Generated</SubFolder>
     </_ClientBuildFile>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\LightSwitch\v5.0\MobileClient\Microsoft.LightSwitch.MobileClient.targets"/>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\LightSwitch\v5.0\MobileClient\Microsoft.LightSwitch.MobileClient.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\LightSwitch\v5.0\Microsoft.LightSwitch.Build.Tasks.targets" />
-
-    <!-- Redefine the targets to be empty -->
-    <Target Name="GetXapOutputFile" />
-
-    <PropertyGroup>
-      <AppxPackage>false</AppxPackage>
-      <AppxGeneratePriEnabled>false</AppxGeneratePriEnabled>
-    </PropertyGroup>
-    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- Redefine the targets to be empty -->
+  <Target Name="GetXapOutputFile" />
+  <PropertyGroup>
+    <AppxPackage>false</AppxPackage>
+    <AppxGeneratePriEnabled>false</AppxGeneratePriEnabled>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

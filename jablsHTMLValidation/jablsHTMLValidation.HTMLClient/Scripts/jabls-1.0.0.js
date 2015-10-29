@@ -147,12 +147,26 @@ var jabls = (function () {
                     if (newValue) {
                         setTimeout(function () {
                             //call validateMethod passing and returning validationResults array
-                            contentItem.validationResults = validateMethod.call(this, screen[entityType], contentItem.validationResults);
+                            contentItem.validationResults =
+                                validateMethod.call(this, screen[entityType], contentItem.validationResults);
+
                         }, 10);
                     }
                 });
             }
         });
+        if (properties.length !== 0) {
+            screen.details.addChangeListener("serverErrors", function (e) {
+                //alert(e.target.serverErrors[0].message);
+                //e.target.screen.findContentItem("Phone").validationResults = e.target.serverErrors[0];
+                $.each(e.target.serverErrors, function () {
+                    //assign to respective contentItem
+                    try {
+                        screen.findContentItem(this.property.name).validationResults = this;
+                    } catch (e) { }
+                });
+            });
+        }
     };
 
     _jabls.isPrintPreview = function () {

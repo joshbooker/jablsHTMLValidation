@@ -6574,6 +6574,15 @@ var msls_DataService_cancelNestedChanges,
                                 entity = entitySet._loadedEntities[validationResultTarget];
                                 return !entity;
                             });
+                            //JAB fix validationResultTarget for added Entity
+                            if (!entity) {
+                                $.each(dataServiceDetails._entitySets, function (j, entitySet) {
+                                    if (entitySet._addedEntities.length === 1 && undefined !== entitySet._addedEntities[0][msls_getProgrammaticName(validationResultProperty)])
+                                        entity = entitySet._addedEntities[0];
+                                    return !entity;
+                                });
+                            }
+                            //JAB
                             if (entity) {
                                 detailsProperty = entity.details
                                 .properties[msls_getProgrammaticName(validationResultProperty)];

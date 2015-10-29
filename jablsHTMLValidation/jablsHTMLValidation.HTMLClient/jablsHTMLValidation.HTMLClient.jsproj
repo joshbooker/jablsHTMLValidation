@@ -69,6 +69,12 @@
     <Content Include="Content\Images\user-splash-screen.png" />
     <Content Include="Content\Web.config" />
     <Content Include="packages.config" />
+    <Content Include="Screens\Accounts\AddEditAccount.lsml.js">
+      <DependentUpon>AddEditAccount.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\Accounts\BrowseAccounts.lsml.js">
+      <DependentUpon>BrowseAccounts.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\Accounts\ViewAccount.lsml.js">
       <DependentUpon>ViewAccount.lsml</DependentUpon>
     </Content>
@@ -87,6 +93,10 @@
     <Content Include="Scripts\msls-2.5.3.min.js" />
     <Content Include="Scripts\winjs-1.0.js" />
     <Content Include="Scripts\winjs-1.0.min.js" />
+    <Content Include="UserCode\Account.lsml.js">
+      <DependentUpon>
+      </DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ServiceMetadataReference Include="..\jablsHTMLValidation.Server\jablsHTMLValidation.Server.csproj">

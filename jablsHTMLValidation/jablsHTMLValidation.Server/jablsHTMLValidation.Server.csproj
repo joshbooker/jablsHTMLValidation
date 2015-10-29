@@ -204,6 +204,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSources\ApplicationData\Account.lsml.cs">
+      <DependentUpon>Accounts.lsml</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedArtifacts\Application.cs" />
+    <Compile Include="GeneratedArtifacts\ApplicationDataObjectContext.cs" />
+    <Compile Include="GeneratedArtifacts\ApplicationGenerated.cs" />
+    <Compile Include="GeneratedArtifacts\DataRuntime.cs" />
+    <Compile Include="GeneratedArtifacts\DataService.cs" />
+    <Compile Include="GeneratedArtifacts\DataServiceImplementation.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG01.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG02.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG03.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG04.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG05.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG06.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG07.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG08.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG09.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG10.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG11.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG12.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG13.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG14.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG15.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG16.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG17.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG18.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG19.cs" />
+    <Compile Include="GeneratedArtifacts\EntityG20.cs" />
+    <Compile Include="GeneratedArtifacts\Permissions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -212,10 +242,18 @@
     </LightSwitchModel>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GeneratedArtifacts\ApplicationData.svc" />
+    <Content Include="GeneratedArtifacts\GeneratedSvcFiles\ApplicationData.svc" />
     <Content Include="Web.config" />
     <LightSwitchModel Include="Properties\DataSources\ApplicationData.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\Accounts.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\Contacts.lsml" />
+    <Content Include="GeneratedArtifacts\ApplicationData.csdl" />
+    <Content Include="GeneratedArtifacts\ApplicationData.msl" />
+    <Content Include="GeneratedArtifacts\ApplicationData.ssdl" />
+    <Content Include="GeneratedArtifacts\LSCodeGeneratedFiles.lsgen" />
+    <Content Include="GeneratedArtifacts\LSResourceGeneratedFiles.lsgen" />
+    <Content Include="GeneratedArtifacts\LSSvcGeneratedFiles.lsgen" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
